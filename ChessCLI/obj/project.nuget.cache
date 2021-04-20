@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N4zrazL1QYBjBXHYHhpLqA2AFO8BscytyQTPqkh1MYMe82RECxzjSvB0qcm6cr6Oov1Rck4tT+JGSRXtMcDAog==",
+  "dgSpecHash": "L+TEwcbn0uX9XNbButYLCtMSVU2L8q9eHHTbxof9GV11HBsCyux7RUI/oBYrk6sjshIKkKkluhO6qZ1M3tl5XQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jacob\\Desktop\\C#\\ChessEngine\\ChessCLI\\ChessCLI.csproj",
+  "projectFilePath": "/Users/jacob/Documents/Projects/chess/chessuaw/ChessCLI/ChessCLI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
