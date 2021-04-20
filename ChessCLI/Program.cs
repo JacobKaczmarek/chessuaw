@@ -13,7 +13,7 @@ namespace ChessCLI
             // moves.PrintBitboards();
 
             Utils.PrintBitboard(Utils.StringToBitboard("1000000000000000000000000000000100000000000000000000000000000000"));
-            Console.WriteLine();
+            Console.WriteLine(Utils.StringToBitboard("1000000000000000000000000000000100000000000000000000000000000000"));
             Utils.PrintBitboard(Utils.ReverseLong(Utils.StringToBitboard("1000000000000000000000000000000100000000000000000000000000000000")));
         }
     }

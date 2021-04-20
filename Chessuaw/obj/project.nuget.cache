@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M8CYPAioXPUoEgYalAulTYyvt5Oy7L6lmS1ZgjfR79SCVK6xqszYBjUoMpzYVq3tYDEuVQbLjS2K3kumkNrEBQ==",
+  "dgSpecHash": "8yZxCR7tSb6EZJRKoYviOil0uTsY1vPg/JcnGGuaD87gSRiFZfkQqNp5U/42D279wAi8/iJLqRdmjcXwlGUY5g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jacob\\Desktop\\C#\\ChessEngine\\Chessuaw\\Chessuaw.csproj",
+  "projectFilePath": "/Users/jacob/Documents/Projects/chess/chessuaw/Chessuaw/Chessuaw.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
