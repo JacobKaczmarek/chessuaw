@@ -6,14 +6,7 @@ namespace Chessuaw {
   public class Utils {
     public static long StringToBitboard(string str)
     {
-      if (str[0] == '0')
-      {
-        return Convert.ToInt64(str, 2);
-      }
-      else
-      {
-        return Convert.ToInt64(str, 2);
-      }
+      return Convert.ToInt64(str, 2);
     }
 
     public static long Benchmark(Func<string, string> f, int times) {
@@ -30,13 +23,18 @@ namespace Chessuaw {
 
     public static long ReverseLong(long num) {
       int count = 63;
-      long reverseNum = num;
+      long reverseNum;
+      long firstBitMask = -9223372036854775808;
       bool negative = false;
 
-      if (num < 0) {
-        num = ~num;
-        negative = true;
-      }
+      if (num < 0)
+       {
+         num ^= firstBitMask;
+         negative = true;
+       }
+
+       reverseNum = num;
+
       num >>= 1;
 
       while (num != 0) {
@@ -48,7 +46,11 @@ namespace Chessuaw {
 
       reverseNum <<= count;
 
-      return negative ? ~reverseNum :reverseNum;
+      if (negative) {
+        reverseNum += 1;
+      }
+
+      return reverseNum;
     }
 
     public static void PrintBitboard(long bitboard)

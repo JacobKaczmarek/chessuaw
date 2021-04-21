@@ -7,9 +7,9 @@ namespace Chessuaw
         // Bitboards
         public long WP = 0, WN = 0, WB = 0, WR = 0, WQ = 0, WK = 0, BP = 0, BN = 0, BB = 0, BR = 0, BQ = 0, BK = 0;
 
-        public Board()
+        public Board(string fen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR")
         {
-
+            LoadFen(fen);
         }
 
         public string debug()
@@ -56,12 +56,6 @@ namespace Chessuaw
                 //binary = "0000000000000000000000000000000000000000000000000000000000000000";
                 //binary = binary.Substring(i + 1 - blankFields) + "1" + new string('0', blankFields) + binary.Substring(0, i);
                 binary = new string('0', i + blankFields - slashCount - blankCount) + '1' + new string('0', 63 - i - blankFields + slashCount + blankCount);
-
-                
-                if (fen[i] != '/')
-                {
-                    System.Console.WriteLine(binary + fen[i]);
-                }
 
                 if (Char.IsDigit(fen[i]))
                 {

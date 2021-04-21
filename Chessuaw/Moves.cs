@@ -8,7 +8,7 @@ namespace Chessuaw {
     long RANK_1, RANK_2, RANK_3, RANK_4, RANK_5, RANK_6, RANK_7, RANK_8;
     long CENTRE, EXTENDED_CENTRE, KING_SIDE, QUEEN_SIDE;
     long WHITE_PIECES; // All capturable white pieces (excluding king)
-    long BLACK_PIECES; // All capturable white pieces (excluding king)
+    long BLACK_PIECES; // All capturable black pieces (excluding king)
     long OCCUPIED;
     long[] FileMasks;
     long[] RankMasks;
@@ -28,13 +28,13 @@ namespace Chessuaw {
       FILE_H = FILE_A << 7;
 
       RANK_1 = Utils.StringToBitboard("1111111100000000000000000000000000000000000000000000000000000000");
-      RANK_2 = RANK_1 >> 8;
-      RANK_3 = RANK_1 >> 16;
-      RANK_4 = RANK_1 >> 24;
-      RANK_5 = RANK_1 >> 32;
-      RANK_6 = RANK_1 >> 40;
-      RANK_7 = RANK_1 >> 48;
-      RANK_8 = RANK_1 >> 56;
+      RANK_2 = (long) ((ulong) RANK_1 >> 8);
+      RANK_3 = (long) ((ulong) RANK_1 >> 16);
+      RANK_4 = (long) ((ulong) RANK_1 >> 24);
+      RANK_5 = (long) ((ulong) RANK_1 >> 32);
+      RANK_6 = (long) ((ulong) RANK_1 >> 40);
+      RANK_7 = (long) ((ulong) RANK_1 >> 48);
+      RANK_8 = (long) ((ulong) RANK_1 >> 56);
 
       FileMasks = new long[] { FILE_A, FILE_B, FILE_C, FILE_D, FILE_E, FILE_F, FILE_G, FILE_H };
       RankMasks = new long[] { RANK_1, RANK_2, RANK_3, RANK_4, RANK_5, RANK_6, RANK_7, RANK_8 };
